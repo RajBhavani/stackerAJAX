@@ -81,6 +81,7 @@ var getUnanswered = function(tags) {
 	});
 };
 // New function for var getTopAnswerers //
+
 var getTopAnswerers = function (searchTerm){
 
 	var request ={
@@ -126,6 +127,7 @@ $(document).ready( function() {
 		var tags = $(this).find("input[name='tags']").val();
 		getUnanswered(tags);
 	});
+	// New user action to get top answerers//
 	$('.inspiration-getter').submit(function(e){
 		e.preventDefault();
 		$('.results').html('');
@@ -135,4 +137,5 @@ $(document).ready( function() {
 	});
 
 
+	
 });
